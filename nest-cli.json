@@ -1,8 +1,77 @@
 {
   "$schema": "https://json.schemastore.org/nest-cli",
   "collection": "@nestjs/schematics",
-  "sourceRoot": "src",
+  "sourceRoot": "apps/yumikeshop/src",
   "compilerOptions": {
-    "deleteOutDir": true
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/yumikeshop/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/yumikeshop",
+  "projects": {
+    "ai-service": {
+      "type": "application",
+      "root": "apps/ai-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/ai-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ai-service/tsconfig.app.json"
+      }
+    },
+    "api-gateway": {
+      "type": "application",
+      "root": "apps/api-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
+      }
+    },
+    "auth-service": {
+      "type": "application",
+      "root": "apps/auth-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/auth-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/auth-service/tsconfig.app.json"
+      }
+    },
+    "monitoring-service": {
+      "type": "application",
+      "root": "apps/monitoring-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/monitoring-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/monitoring-service/tsconfig.app.json"
+      }
+    },
+    "payment-service": {
+      "type": "application",
+      "root": "apps/payment-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/payment-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/payment-service/tsconfig.app.json"
+      }
+    },
+    "shop-service": {
+      "type": "application",
+      "root": "apps/shop-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/shop-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/shop-service/tsconfig.app.json"
+      }
+    },
+    "yumikeshop": {
+      "type": "application",
+      "root": "apps/yumikeshop",
+      "entryFile": "main",
+      "sourceRoot": "apps/yumikeshop/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/yumikeshop/tsconfig.app.json"
+      }
+    }
   }
 }
