@@ -1,5 +1,6 @@
 # YumikeShop - AI-Powered Anime-Themed E-Commerce Platform
 
+![YumikeShop](/assets/yumike.webp)
 
 
 Welcome to **YumikeShop**, an AI-powered, microservices-based e-commerce platform with a cute anime theme! 🛍️✨ This project leverages **NestJS**, **Kafka**, **PostgreSQL (NeonDB)**, **Drizzle ORM**, **Next.js**, and **Grafana** for a highly scalable and intelligent shopping experience.
